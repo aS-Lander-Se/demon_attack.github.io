@@ -1,0 +1,193 @@
+.demon-attack {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/** Demono Slayer **/
+
+.seccion-demon {
+    width: 50%;
+    height: 100vh;
+    background-image: url('img/demonslayer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: width 1s;
+}
+
+.seccion-demon:hover {
+    width: 100%;
+}
+
+.seccion-demon:hover .seccion-attack {
+    width: 0%;
+}
+
+.seccion-demon::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(129,39,185,.5);
+    z-index: 0;
+}
+
+.seccion-demon_titulo {
+    z-index: 10;
+    margin-bottom: 20px;
+}
+
+.seccion-demon_titulo > h2 {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.seccion-demon_boton {
+    position: relative;
+    margin-top: 20px;
+    z-index: 10;
+}
+
+.seccion-demon_boton::after,.seccion-demon_boton::before {
+    content: '';
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    transition: all .1s .4s;
+    z-index: -1;
+}
+
+.seccion-demon_boton::after {
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    top: -21px;
+    left: -2px;
+}
+
+.seccion-demon_boton::before {
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    bottom: -21px;
+    right: -2px;
+}
+
+.seccion-demon_boton > a {
+    padding: 20px 50px;
+    background: rgba(255,255,255,.2);
+    color: #000;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: all .1s .2s;
+    z-index: 1000;
+}
+
+.seccion-demon_boton:hover::after,.seccion-demon_boton:hover::before {
+    width: 100%;
+    height: 58px;
+    transition: all .1s;
+}
+
+.seccion-demon_boton:hover a {
+    background: rgba(255,255,255,1);
+}
+
+/** Attack On Titan **/
+
+.seccion-attack {
+    width: 50%;
+    height: 100vh;
+    background-image: url('img/aot.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: width 1s;
+}
+
+.seccion-attack:hover {
+    width: 100%;
+}
+
+.seccion-attack:hover .seccion-demon {
+    width: 0%;
+}
+
+.seccion-attack::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(52,127,131,.6);
+    z-index: 0;
+}
+
+.seccion-attack_titulo {
+    z-index: 10;
+    margin-bottom: 20px;
+}
+
+.seccion-attack_titulo > h2 {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.seccion-attack_boton {
+    position: relative;
+    margin-top: 20px;
+    z-index: 10;
+}
+
+.seccion-attack_boton::after,.seccion-attack_boton::before {
+    content: '';
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    transition: all .1s .4s;
+    z-index: -1;
+}
+
+.seccion-attack_boton::after {
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    top: -21px;
+    left: -2px;
+}
+
+.seccion-attack_boton::before {
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    bottom: -21px;
+    right: -2px;
+}
+
+.seccion-attack_boton > a {
+    padding: 20px 50px;
+    background: rgba(255,255,255,.2);
+    color: #000;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: all .1s .2s;
+    z-index: 1000;
+}
+
+.seccion-attack_boton:hover::after,.seccion-attack_boton:hover::before {
+    width: 100%;
+    height: 58px;
+    transition: all .1s;
+}
+
+.seccion-attack_boton:hover a {
+    background: rgba(255,255,255,1);
+}
